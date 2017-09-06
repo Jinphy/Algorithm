@@ -67,7 +67,7 @@ public class Exam_22 {
         long value = 1;
         long nodesAtBench;
         while (m != 0) {
-            nodesAtBench = getNodesAtBench(value, n);
+            nodesAtBench = getNodesAtBrench(value, n);
             if (nodesAtBench >= m) {
                 m--;
                 if (m == 0) {
@@ -83,7 +83,7 @@ public class Exam_22 {
 
     }
 
-    private static long getNodesAtBench(long value, long n) {
+    private static long getNodesAtBrench(long value, long n) {
         long cnt = 1;
         for (long p = 10; value * p <= n; p *= 10) {
             if (value * p + p - 1 < n) {
